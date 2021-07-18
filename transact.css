@@ -1,0 +1,123 @@
+body{
+    background-color:	#D0F0C0;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+#welcome{
+    margin: 30px 420px 20px 170px;
+    font-size: 30px;
+    font-style: italic;
+    color: mediumblue;
+    font-weight: bold;
+   
+    text-align: center;
+}
+#payment{
+    margin: 25px 100px 1px 100px;
+    background-color:	#D0F0C0;
+}
+h2{
+    margin: 20px 559px 30px 270px;
+    padding: 0px;
+   
+}
+h4{
+        margin: 0px 0px 30px 280px;
+}
+.a1{
+    column-count: 2;
+    column-gap: 120px;
+}
+.a1 div{
+    font-size: 20px;
+    color: green;
+}
+select,option,input{
+    width: 300px;
+    height: 30px;
+    border: 1px solid #fff;
+}
+#btn{
+   margin: 30px 300px 20px 440px;
+   font-size: 20px;
+   color: #fff;
+   border: 1px solid #fff;
+   background-color: green;
+   border-radius: 7px;
+   box-shadow: 2px 2px 15px;
+   padding: 5px 20px;
+}
+#btn:hover{
+    background-color: blue;
+}
+
+#i1{ 
+    margin-top: 20px ;
+    width: 50px;
+    height: 75px;
+    color: #fff;
+}
+#i2{
+    margin-right: auto;
+    font-weight: bolder;
+    font-style: italic;
+    letter-spacing: 3px;
+    margin-top: 15px;
+    
+    font-size: 35px;
+    color: rgb(34, 34, 34);
+}
+i{
+    color: #32CD32;
+}
+.navbar{
+   margin: 30px 0px 60px 0px;
+   height: 1px;
+   margin-bottom: 70px;
+   padding-bottom: 0px;
+  
+}
+.navbar-nav{
+    margin-left: auto;
+   
+}
+.collapse li{
+    margin-top: 33px;
+    font-size: 18px;
+}
+.text{
+    color: #fff;
+}
+#history{
+    background-color: #fff;
+    margin-bottom: 0px;
+}
+.tbl{
+    margin: 40px 150px 0px 150px;
+    padding-bottom: 60px;
+}
+th{
+    font-size: 17px;
+}
+.display-6{
+    text-align: center;
+   padding: 40px 0px 10px 0px;
+   
+    font-weight: bold;
+}
+table.roundedCorners{
+    border: 1px solid #fff;
+    border-radius: 13px; 
+}
+thead{
+    color: #fff;
+    background-color: #002D62;
+   
+}
+
+th, td{
+    text-align: center;
+}
+#history{
+    padding-top: 10px;
+}

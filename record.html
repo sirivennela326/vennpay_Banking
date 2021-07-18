@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="record.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+            
+        <div class="container-fluid">
+          
+          <svg class="ms-5 mt-0 me-4" id="i1" xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#3c3c3c" class="bi bi-bank" viewBox="0 0 16 16">
+            <path d="M8 .95 14.61 4h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.379l.5 2A.5.5 0 0 1 15.5 17H.5a.5.5 0 0 1-.485-.621l.5-2A.5.5 0 0 1 1 14V7H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 4h.89L8 .95zM3.776 4h8.447L8 2.05 3.776 4zM2 7v7h1V7H2zm2 0v7h2.5V7H4zm3.5 0v7h1V7h-1zm2 0v7H12V7H9.5zM13 7v7h1V7h-1zm2-1V5H1v1h14zm-.39 9H1.39l-.25 1h13.72l-.25-1z"/>
+          </svg>
+              <a id="i2" class="navbar-brand" href="index.html">Venn<i>Pay</i></a>
+          <button class="navbar-toggler mt-1 mb-0 btn btn-light float-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-white"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav  mb-1 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link px-3 py-1 me-5 pp" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-2 me-5" href="transact.html#history"><button class="btn btn-success">Transaction History</button></a>
+              </li>
+             
+            </ul>
+           
+        </div>
+        </div>
+      </nav>
+    
+    <section class="t">
+    <table class="table table-sm table-light table-striped table-hover table-bordered">
+        <thead>
+            <tr>
+                <th style="width:10%" scope="row">Customer ID</th>
+                <th style="width:18%" scope="row">Name</th>
+                <th style="width:25%" scope="row">Email address</th>
+                <th style="width:20%" scope="row">Current Balance</th>
+                <th style="width:10%" scope="row">Operation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="1">
+                <td class="align-middle row-data">1</td>
+                <td class="align-middle row-data">Damon</td>
+                <td class="align-middle row-data">damons123@gmail.com</td>
+                <td id="a1" class="align-middle row-data" value="553500">554500</td>
+                <td><button class="btn btn-primary btn-sm rounded m-1" id="btn1"  onclick="f1(this.id)">Transfer</button></td>
+            </tr>
+            <tr id="2">
+                <td class="align-middle row-data">2</td>
+                <td class="align-middle row-data">Ragu Varadkar</td>
+                <td class="align-middle row-data">raguvaradkar@yahoo.com</td>
+                <td id="a2" class="align-middle row-data" value="43213">43213</td>
+                <td><button class="btn btn-primary btn-sm rounded m-1" id="btn2" onclick="f1(this.id)">Transfer</button></td>
+            </tr>
+            <tr id="3">
+                <td class="align-middle row-data">3</td>
+                <td class="align-middle row-data">Sharath Chandra</td>
+                <td class="align-middle row-data">sharathc1006@gmail.com</td>
+                <td id="a3" class="align-middle row-data" value="743213">743213</td>
+                <td><button class="btn btn-primary btn-sm rounded m-1" id="btn3" onclick="f1(this.id)">Transfer</button></td>
+            </tr>
+            <tr id="4">
+                <td class="align-middle row-data">4</td>
+                <td class="align-middle row-data">Hayley Paige</td>
+                <td class="align-middle row-data">hayleyp@outlook.com</td>
+                <td id="a4" class="align-middle row-data" value="43213">43213</td>
+                <td><button class="btn btn-primary btn-sm rounded m-1" id="btn4" onclick="f1(this.id)">Transfer</button></td>
+            </tr>
+            <tr id="5">
+                <td class="align-middle row-data">5</td>
+                <td class="align-middle row-data">Dharsh Patel</td>
+                <td class="align-middle row-data">dharshp27@gmail.com</td>
+                <td id="a5" class="align-middle row-data" value="67200">67200</td>
+                <td><button class="btn btn-primary btn-sm rounded m-1" id="btn5" onclick="f1(this.id)">Transfer</button></td>
+            </tr>
+            <tr id="6">
+                <td class="align-middle row-data">6</td>
+                <td class="align-middle row-data">Priya Sharma</td>
+                <td class="align-middle row-data">priyasharma347@yahoo.com</td>
+                <td id="a6" class="align-middle row-data" value="643213">643213</td>
+                <td><button class="btn btn-primary btn-sm rounded m-1" id="btn6" onclick="f1(this.id)">Transfer</button></td>
+            </tr>
+            <tr id="7">
+                <td class="align-middle row-data">7</td>
+                <td class="align-middle row-data">Bindu Mishra</td>
+                <td class="align-middle row-data">bindu.mishra23@gmail.com</td>
+                <td id="a7" class="align-middle row-data" value="24213">24213</td>
+                <td><button class="btn btn-primary btn-sm rounded m-1" id="btn7" onclick="f1(this.id)">Transfer</button></td>
+            </tr>
+            <tr id="8">
+                <td class="align-middle row-data">8</td>
+                <td class="align-middle row-data">Vijendar Singh</td>
+                <td class="align-middle row-data">vijendarp@yahoo.com</td>
+                <td id="a8" class="align-middle row-data" value="14893">14893</td>
+                <td><button class="btn btn-primary btn-sm rounded m-1" id="btn8" onclick="f1(this.id)">Transfer</button></td>
+            </tr>
+            <tr id="9">
+                <td class="align-middle row-data">9</td>
+                <td class="align-middle row-data">Shilpa Reddy</td>
+                <td class="align-middle row-data">shilpareddy07@gmail.com</td>
+                <td id="a9" class="align-middle row-data" value="124213">124213</td>
+                <td><button class="btn btn-primary btn-sm rounded m-1" id="btn9" onclick="f1(this.id)">Transfer</button></td>
+            </tr>
+           
+            <tr id="10">
+                <td class="align-middle row-data">10</td>
+                <td class="align-middle row-data">Akrithi Agarwal</td>
+                <td class="align-middle row-data">agarwalakrithi432@outlook.com</td>
+                <td id="a10" class="align-middle row-data" value="184893">184893</td>
+                <td><button class="btn btn-primary btn-sm rounded m-1" id="btn10" onclick="f1(this.id)">Transfer</button></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+  <script src="record.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

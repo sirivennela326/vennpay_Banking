@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="transact.css">
+
+</head>
+<body>
+  <section id="pmt">
+  <nav class="navbar navbar-expand-lg navbar-light">
+            
+    <div class="container-fluid">
+      
+      <svg class="ms-5 mt-0 me-4" id="i1" xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#3c3c3c" class="bi bi-bank" viewBox="0 0 16 16">
+        <path d="M8 .95 14.61 4h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.379l.5 2A.5.5 0 0 1 15.5 17H.5a.5.5 0 0 1-.485-.621l.5-2A.5.5 0 0 1 1 14V7H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 4h.89L8 .95zM3.776 4h8.447L8 2.05 3.776 4zM2 7v7h1V7H2zm2 0v7h2.5V7H4zm3.5 0v7h1V7h-1zm2 0v7H12V7H9.5zM13 7v7h1V7h-1zm2-1V5H1v1h14zm-.39 9H1.39l-.25 1h13.72l-.25-1z"/>
+      </svg>
+          <a id="i2" class="navbar-brand" href="index.html">Venn<i>Pay</i></a>
+      <button class="navbar-toggler mt-1 mb-0 btn btn-light float-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-white"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav  mb-1 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link px-2 me-4" aria-current="page" href="record.html"><button class="btn btn-info text-light">View all customers</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark px-2 me-4" href="#history"><button class="btn btn-dark" >Transaction History</button></a>
+          </li>
+         
+        </ul>
+       
+     
+    </div>
+    </div>
+  </nav>
+
+  <section>
+    <div id="welcome"></div>
+  </section>
+    <section id="payment">
+        <h2>Payment Details  </h2>
+        
+    <article class="a1">
+      <h4>Customer ID :</h4> <div id="res-id">2</div>
+    </article>
+    <article class="a1">
+        <h4>Name :</h4> <div id="res-name">2</div>
+      </article>
+      <article class="a1">
+        <h4>Email address :</h4> <div id="res-email">2</div>
+      </article>
+      <article class="a1">
+        <h4>Current Balance :</h4> <div value="" id="res-currentb"></div>
+      </article>
+      <article class="a1">
+        <h4>Send To :</h4> 
+        <form action="">
+        <select id="myselect" required>
+            <option selected disabled value="">Select ...</option>
+            <option id="a1" value="Damon">Damon</option>
+            <option id="a2" value="Ragu Varadkar">Ragu Varadkar</option>
+            <option id="a3" value="Sharath Chandra">Sharath Chandra</option>
+            <option id="a4" value="Hayley Paige">Hayley Paige</option>
+            <option id="a5" value="Dharsh Patel">Dharsh Patel</option>
+            <option id="a6" value="Priya Sharma">Priya Sharma</option>
+            <option id="a7" value="Bindu Mishra">Bindu Mishra</option>
+            <option id="a8" value="Vijendar Singh">Vijendar Singh</option>
+            <option id="a9" value="Shilpa Reddy">Shilpa Reddy</option>
+            <option id="a10" value="Akrithi Agarwal">Akrithi Agarwal</option>
+        </select>
+      
+      </article>
+      <article class="a1">
+        <h4>Enter Amount :</h4>
+        <input type="text" id="amount" name="amount" required>
+      </article>
+      <a href="#history"><button id="btn">Confirm Payment</button></a>
+    </form>
+    </section>
+  </section>
+    <section id="history">
+      <div class="display-6">Transaction History</div> 
+      <section class="tbl">
+        <table id="myTable" class="table table-striped roundedCorners table-bordered border-secondary">
+        <thead>
+          <tr>
+            <th class="p-3" scope="col">S.no</th>
+            <th class="p-3" scope="col">User</th>
+            <th class="p-3" scope="col">Paid to</th>
+            <th class="p-3" scope="col">Amount</th>
+            <th class="p-3" scope="col">Date</th>
+          </tr>
+        </thead>
+        <tbody>
+         <tr>
+             <td>2</td>
+             <td>Bindu Mishra</td>
+             <td>Hayley Paige</td>
+             <td>5000 /-</td>
+             <td>10/07/2021</td>
+         </tr>
+         <tr>
+          <td>3</td>
+          <td>Damon</td>
+          <td>Dharsh Patel</td>
+          <td>1250 /-</td>
+          <td>05/07/2021</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Sharath Chandra</td>
+        <td>Priya Sharma</td>
+        <td>18300 /-</td>
+        <td>28/06/2021</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Akrithi Agarwal</td>
+      <td>Damon</td>
+      <td>4350 /-</td>
+      <td>24/06/2021</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Dharsh Patel</td>
+    <td>Vijendar Singh</td>
+    <td>30000 /-</td>
+    <td>21/06/2021</td>
+</tr>
+<tr>
+  <td>7</td>
+  <td>Shilpa Reddy</td>
+  <td>Ragu Varadkar</td>
+  <td>22000 /-</td>
+  <td>21/06/2021</td>
+</tr>
+<tr>
+  <td>8</td>
+  <td>Priya Sharma</td>
+  <td>Akrithi Agarwal</td>
+  <td>1300 /-</td>
+  <td>19/06/2021</td>
+</tr>
+        </tbody>
+      </table>
+    </section>
+    </section>
+ <script src="transact.js"></script>
+ <script src="transact2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
